@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HUA NA MAGIC</title>
+    <!-- <script src="script_change_color_every_second.js" type="text/javascript"></script> -->
+</head>
+<body id="abc">
+    <h1>IT'S MAGIC!! :P :P</h1>
+</body>
+<script>
+    var body = document.querySelector("body");
+    var isBlue = false;
+
+    setInterval(function(){
+        if(isBlue){
+            body.style.background = "white";
+        }
+        else{
+            body.style.background = "#3498db";
+        }
+        isBlue = !isBlue;
+    }, 1000);
+
+    body;
+
+    var h1 = document.querySelector("h1");
+    h1.style.color="pink";
+</script>
+</html>
