@@ -45,14 +45,14 @@ This is how array will look!
 * Show db.collection.drop()
 * Add a show route/template
 
-RESTFUL ROUTES
+# RESTFUL ROUTES
 
-name    url         verb   desc.
-==============================================
-INDEX   /dogs       GET    Display a list of all dog
-NEW     /dogs/new   GET    Displays a form to make a new dog
-CREATE  /dogs       POST   Add a new dog to DB
-SHOW    /dogs/:id   GET    Shows info about one dog
+* name    url         verb   desc.
+* ==============================================
+* INDEX   /dogs       GET    Display a list of all dog
+* NEW     /dogs/new   GET    Displays a form to make a new dog
+* CREATE  /dogs       POST   Add a new dog to DB
+* SHOW    /dogs/:id   GET    Shows info about one dog
 
 # Refactor Mongoose Code
 * Create a models directory
@@ -137,7 +137,7 @@ CREATE    campgrounds/:id/comments       POST
 * Add Destroy Route
 * Add Delete Button
 
-# Authorization Part-2: Comments
+# Authorization Part-2:  Comments
 * User can only edit his/her comments
 * User can only delete his/her comments
 * Hide/Show edit and delete buttons
