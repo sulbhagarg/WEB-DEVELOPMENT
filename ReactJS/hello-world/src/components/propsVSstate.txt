@@ -1,0 +1,13 @@
+Props
+1. props get passed to the component
+2. Function Parameters
+3. Props are immutable
+4. props - Funtional Components
+   this.props - Class Components
+
+State
+1. State is managed within the component
+2. Variables declared in the function body
+3. state can be changed
+4. useSate hook - Functional Components
+   this.state - Class Components
