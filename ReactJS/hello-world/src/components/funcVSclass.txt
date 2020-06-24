@@ -1,0 +1,14 @@
+Functional Component:
+1. Simple functions
+2. Absence of 'this' keyword
+3. Solution without using state
+4. Mainly responsible for the UI
+5. Stateless / Dumb / Presentational
+6. Use func components as much as possible
+
+Class components
+1. More feature Rich
+2. Maintain their own private data - state
+3. Complex UI logic
+4. Provide lifecycle hooks
+5. Stateful / Smart / Container
