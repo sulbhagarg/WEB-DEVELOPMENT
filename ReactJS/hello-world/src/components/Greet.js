@@ -5,7 +5,15 @@ import React from 'react'
 // }
 
 // ES6 syntax
-const Greet = () => <h1>Hello Sulbha</h1>
+const Greet = (props) => {
+    console.log(props);
+    return (
+        <div>
+            <h1>Hello {props.name}! Your love is {props.love}</h1>
+            {props.children}
+        </div>
+    )
+}
 
 // importing it as name Greet is compulsion!
 // export const Greet = () => <h1>Hello Sulbha</h1>
