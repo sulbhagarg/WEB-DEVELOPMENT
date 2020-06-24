@@ -12,3 +12,6 @@ Class components
 3. Complex UI logic
 4. Provide lifecycle hooks
 5. Stateful / Smart / Container
+
+After hooks
+functional components can have state.
