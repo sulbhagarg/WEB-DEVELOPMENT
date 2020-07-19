@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PRACTICAL 3(B)</title>
+</head>
+<body bgcolor="cfcfcf">
+	<h1>REGISTRATION FORM</h1>
+	<table border="0">
+		<form>
+			<tr>
+				<td><label for="reg_no">Vehicle Registartion Number</label></td>
+				<td><input type="text" name="reg_no" id="reg_no"><br></td>
+			</tr>
+
+			<tr>
+				<td><label>Name of owner</label></td>
+				<td><input type="text" name="name" minlength="30"><br></td>
+			</tr>
+			
+			<tr>
+				<td><label>Date</label></td>
+				<td><input type="Date" name="date"><br></td>
+			</tr>
+			
+			<tr>
+				<td valign="top"><label>Address</label><br></td>
+				<td><textarea rows="10" cols="80"></textarea><br></td>
+			</tr>
+
+			<tr>
+				<td><label>State</label></td>
+				<td>
+					<select name="states">
+					<optgroup label="North States">
+						<option value="Punjab">Punjab</option>
+					</optgroup>
+					<optgroup label="South States">
+						<option value="Tamil Nadu">Tamil Nadu</option>
+					</optgroup>
+					</select>
+				</td>
+			</tr>
+
+			<tr>
+				<td><label>Mobile Number</label></td>
+				<td><input type="text" name="mobile no" size="10"><br></td>
+			</tr>
+			
+			<tr>
+				<td valign="top"><label>Vehicle Service Components:</label><br></td>
+				<td>
+					<input type="checkbox" name="component" value="Basic service">Basic Service<br>
+					<input type="checkbox" name="component" value="Oil">Oil<br>
+					<input type="checkbox" name="component" value="Oil Filters">Oil Filters<br>
+					<input type="checkbox" name="component" value="Wheel Rotating">Wheel Rotating<br>
+					<input type="checkbox" name="component" value="Wheel Balancing">Wheel Balancing<br>
+				</td>
+			</tr>
+
+			<tr>
+				<td><label>Approximate Bill Amount</label></td>
+				<td><input type="text" name="Approximate Bill Amount"><br></td>
+			</tr>
+			
+			<tr>
+				<td><label>Email:</label></td>
+				<td><input type="email" name="email"><br></td>
+			</tr>
+			
+			<tr>
+				<td><label>User Complains</label></td>
+				<td><input type="textarea" name="complains"><br></td>
+			</tr>
+			
+			<tr>
+				<td><input type="reset" name="reset"><br></td>
+			</tr>
+
+			<tr>
+				<td><button type="Submit" value="Submit"><br><img src="submit.png" alt="Submit"><br>Submit</button></td>
+			</tr>
+		</form>
+</table>
+</body>
+</html>

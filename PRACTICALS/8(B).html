@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	PRACTICAL 8(B)
+</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var num = window.prompt();
+		var str = num.toString();
+		var result = str[0];
+
+		for (var x = 1; x < str.length; x++) 
+		{
+			if (str[x - 1] % 2 == 0 && str[x] % 2 == 0)
+			{
+		    	result=result+"-";
+		    	result=result+str[x];
+		  	} 
+		  	else 
+		  	{
+		    	result=result+str[x];
+		  	}
+		}
+
+		document.write("<h2>"+result+"</h2>");
+	</script>
+</body>
+</html>

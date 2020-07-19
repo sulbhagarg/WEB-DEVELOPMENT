@@ -1,0 +1,24 @@
+img{
+	width: 30%;
+	float: left;
+	margin: 1.66%;
+	/*border: 5px solid #f1f1f1;*/
+}
+p{
+	font-weight: bold;
+	font-size: 40px;
+	margin-left: 1.66%;
+	border-bottom: 3px solid #f1f1f1;
+	width: 30%;
+	padding-bottom: 20px;
+}
+#content{
+	font-size: 20px;
+	float: right;
+	margin: 1.6% 1%;
+	text-align: justify;
+}
+body{
+	background: #f1f1bb;
+	/*border: 5px solid black;*/
+}

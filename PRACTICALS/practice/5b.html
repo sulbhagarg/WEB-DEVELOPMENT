@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>5b</title>
+</head>
+<body>
+	<p id="demo">fsjds</p>
+<script type="text/javascript">
+	function myfunc(event){
+		if(event.shiftKey)
+		{
+			alert("shiftkey");
+		}
+		else if(event.ctrlKey)
+		{	
+			alert(event.target.tagName);
+		}	
+		// window.prompt();
+	}
+
+	document.getElementById("demo").onclick = function(){myfunc(event)};
+</script>
+</body>
+</html>

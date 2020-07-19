@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+		PRACTICAL 9(B)
+  </title>
+</head>
+<body>
+<script type="text/javascript">
+	var num = window.prompt();
+	function humanize(number) {
+        if(number % 100 >= 11 && number % 100 <= 13)
+            return number + "th";
+     
+        switch(number % 10) {
+            case 1: return number + "st";
+            case 2: return number + "nd";
+            case 3: return number + "rd";
+            default: return number + "th";        
+        }
+    }
+	document.write("<h2>"+humanize(num)+"</h2>");
+</script>
+</body>
+</html>

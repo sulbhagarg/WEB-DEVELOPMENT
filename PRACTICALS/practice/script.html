@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prac</title>
+</head>
+<body>
+<script type="text/javascript">
+	var string="My name is xyz";
+	function indexof(str)
+	{
+		// var res=string.split(" ");
+		var l=string.length;
+		var l1=str.length;
+		// document.write(res);
+		for(var i=0;i<l;i++)
+		{
+			var x=0;
+			var flag=0;
+			for(var j=i;j<i+l1;j++)
+			{
+				if(string[j]==str[x])
+				{
+					x++;
+					flag=1;
+					continue;
+				}
+				else
+				{
+					flag=0;
+					break;
+				}
+			}
+			if(flag==1)
+				return j-l1;
+		}
+		return -1;
+	}
+	document.write(indexof("you"));
+</script>
+</body>
+</html>

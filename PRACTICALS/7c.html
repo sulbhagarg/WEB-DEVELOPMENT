@@ -1,0 +1,42 @@
+<html>
+<head>
+  <title>PRACTICAL 7(C)</title>
+
+<style>
+div{ 
+  width: 150px;
+  height: 150px;
+    background-color: red;
+    position: relative;
+    animation-name: hi;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes hi {
+0% {
+  left:0px; top:0px;
+    border-radius: 100% 100% 100% 100%;
+  }
+  25%{
+    border-radius: 75% 75% 75% 75%;
+  }
+    50%{
+    border-radius: 50% 50% 50% 50%;
+  }
+  75%{
+    border-radius: 25% 25% 25% 25%;
+  }
+  100%{
+left:1300px; top:550px;
+    border-radius: 0 0 0 0;
+  }
+  from {background-color: blue;}
+  to {background-color: yellow;}
+  }
+</style>
+</head>
+<body>
+ <div></div>
+</body>
+</html>

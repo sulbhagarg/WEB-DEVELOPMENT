@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PRACTICAL 10(B)</title>
+</head>
+<body>
+<script type="text/javascript">
+		function validate(){
+			var result = true;
+			var field = document.getElementById('ipaddress').value;
+			var arr = field.split('.');
+			var ip = [parseInt(arr[0]),parseInt(arr[1]),parseInt(arr[2]),parseInt(arr[3])];
+			if(isNaN(ip[0])){
+				window.alert("IP Address is Wrong");
+			}
+			else if(ip[0] > 255 || ip[0] < 0 || ip[1] > 255 || ip[1] < 0 || ip[2] > 255 || ip[2] < 0 || ip[3] > 255 || ip[3] < 0){
+				window.alert("IP Address is Wrong");
+				result = result && false;
+			}
+			
+			field = document.getElementById('alphanumeric').value;
+			if (!/^[a-zA-Z0-9]+$/.test(field)) {
+				window.alert("AlphaNumeric is not AlphaNumeric");
+				result = result && false;
+			}
+
+			field = document.getElementById('date').value;
+			if (!/^(([0-2]\d|[3][0-1])\/([0]\d|[1][0-2])\/[2][0]\d{2})$|^(([0-2]\d|[3][0-1])\/([0]\d|[1][0-2])\/[2][0]\d{2}\s([0-1]\d|[2][0-3])\:[0-5]\d\:[0-5]\d)$/.test(field)) {
+				window.alert("Date is not DD/MM/YYYY");
+				result = result && false;
+			}
+
+			field = document.getElementById('special').value;
+			if (!/[^a-zA-Z0-9]+$/.test(field)) {
+				window.alert("Special is not Special");
+				result = result && false;
+			}
+
+			field = document.getElementById('email').value;
+			if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(field)) {
+				window.alert("Email is Wrong");
+				result = result && false;
+			}
+
+			field = document.getElementById('phone').value;
+			if (!/^[0-9]{10}$/.test(field)) {
+				window.alert("Telephone is Wrong");
+				result = result && false;
+			}
+
+			field = document.getElementById('required').value;
+			if (field == '') {
+				window.alert("Required Field not Entered");
+				result = result && false;
+			}
+
+			field = document.getElementById('password').value;
+			fieldCopy = document.getElementById('conpass').value;
+			if (field != fieldCopy) {
+				window.alert("Passwords are not same");
+				result = result && false;
+			}
+
+			return result;
+		}	
+	</script>
+
+	<table>
+		<tr>
+			<td><h2>Javascript Validation</h2></td>
+		</tr>
+		<tr>
+			<td><label>IP Address</label></td>
+			<td><input type="text" id="ipaddress"></td>
+		</tr>
+		<tr>
+			<td><label>AlphaNumeric</label></td>
+			<td><input type="text" id="alphanumeric">
+		</td></tr>
+		<tr>
+			<td><label>Date DD/MM/YYYY</label></td>
+			<td><input type="text" id="date">
+		</td></tr>
+		<tr>
+			<td><label>Only special symbol</label></td>
+			<td><input type="text" id="special">
+		</td></tr>
+		<tr>
+			<td><label>Email</label></td>
+			<td><input type="text" id="email">
+		</td></tr>
+		<tr>
+			<td><label>Phone</label></td>
+			<td><input type="text" id="phone">
+		</td></tr>
+		<tr>
+			<td><label>Required</label></td>
+			<td><input type="text" id="required">
+		</td></tr>
+		<tr>
+			<td><label>Password</label></td>
+			<td><input type="password" id="password">
+		</td></tr>
+		<tr>
+			<td><label>Confirm Pass</label></td>
+			<td><input type="password" id="conpass">
+		</td></tr>
+		<tr>
+			<td><button onclick="window.alert('Validation returned ' + validate())">
+				Submit
+			</button></td>
+		</tr>
+	</table>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+  <title>PRACTICAL 7(B)</title>
+<style>
+body {
+  counter-reset: section;
+}
+h1 {
+  counter-reset: subsection;
+}
+h1::after {
+font-size: 20px;
+  counter-increment: section;
+  content: counter(section) ". ";
+}
+h2::before {
+  counter-increment: subsection;
+  content: counter(section) "." counter(subsection) " ";
+}
+.first-letter {
+  font-size: 45px;
+  line-height: 70px;
+  color: #440044;
+}
+.next-letter {
+  font-size: 20px;
+  color: #440044;
+  line-height: 70px;
+}
+</style>
+</head>
+<body>
+<h1><span class="first-letter">T</span><span class="next-letter">HIS IS PARAGRAPH </span></h1>
+Some text......
+<br>
+<h1><span class="first-letter">T</span><span class="next-letter">HIS IS PARAGRAPH </span></h1>
+Some text......
+<br>
+<h1><span class="first-letter">T</span><span class="next-letter">HIS IS PARAGRAPH </span></h1>
+Some text......
+<br>
+<br>
+<h1><span class="first-letter"></span><span class="next-letter">PARAGRAPH </span></h1>
+This is a hyperlink without underline. Link: 
+<a href ="7b.html" style="text-decoration: none; color: black;">Home Page</a>
+</body>
+</html>

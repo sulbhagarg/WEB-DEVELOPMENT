@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PRACTICAL 10(A)</title>
+</head>
+<body>
+<script type="text/javascript">
+	var date = new Date();
+	document.write("<h2>" + date + "</h2>");
+	var hour = date.getHours();
+	if (hour > 7 && hour < 12) {
+		document.write("<h2>Good Morning " + date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + "AM</h2>");
+	} else if(hour < 16) {
+		document.write("<h2>Good Afternoon " + date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + "PM</h2>");
+	} else if(hour < 23){
+		document.write("<h2>Good Evening " + date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + "PM</h2>");
+	
+	} else {
+		document.write("<h2>Good Night " + date.getDate() + "/" + (date.getMonth() +1) + "/" + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds() + "AM</h2>");
+	}
+</script>
+</body>
+</html>

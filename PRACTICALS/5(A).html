@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PRACTICAL 5(A)</title>
+	<style type="text/css">
+		.div1{
+			height: 200px;
+			width: 200px;
+			border-left: 7px solid #00306B;
+			border-top: 7px dashed #00306B;
+			border-right: 7px double #00306B;
+			border-bottom: 7px dotted #00306B;
+			margin: auto;
+		}
+
+		.div3{
+			position: relative;
+			height: 200px;
+			width: 200px;
+			border: 10px dashed #00306B;
+			margin: auto;
+			margin-top: 10px;
+
+		}
+		
+		.div3::after{
+			content: "";
+			position: absolute;
+			top: -10px;
+			right: -10px;
+			height: 100%;
+			width: 100%;
+			border: 10px dotted #00306B;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<div class = "div1"></div>
+	<div class = "div3"></div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>Employee Information</h1>
+<form>
+	<div>
+		<label>Employee ID:<input type="text" name="empid"></label><br>
+		<label>Name:</label>
+		<input type="text" name="name" required><br>
+		<label>Passowrd:</label>
+		<input type="text" name="pass" minlength="6"><br>
+		<label>Employee Photo:</label>
+		<input type="file" name="photo"><br>
+		<label>Gender:</label>
+		Male<input type="radio" name="gender" value="male">
+		Female<input type="radio" name="gender" value="female"><br>
+		<label>Department:</label>
+		<input list="dept">
+		<datalist id="dept">
+			<option value="HR Department" selected></option>
+			<option value="HR Deptment"></option>
+			<option value="HR Dartment"></option>
+			<option value="HR Dtment"></option>
+		</datalist><br>
+		<label>Address:</label><br>
+		<textarea rows="10" cols="30">Enter your presetn address</textarea>
+	</div>
+	<input type="submit" name="submit">
+</form>
+</body>
+</html>

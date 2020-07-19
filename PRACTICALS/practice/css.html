@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animation</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 200px;
+			border-radius: 200px;
+			position: relative;
+			box-shadow: 2px -3px 5px grey;
+			animation-name: ball;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+
+		@keyframes ball{
+			0%{
+				left:0px;
+			}
+			100%{
+				left:100%;
+			}
+			from{background-color: blue;}
+			to{background-color: orange;}
+		}
+	</style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

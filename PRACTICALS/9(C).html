@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Practical 9(C)</title>
+</head>
+<body>
+<script type="text/javascript">
+	var string = window.prompt();
+	function ALPHA_POS(str)
+	{
+		str = str.toLowerCase();
+		var result = "";
+		for(var i=0; i<str.length; i++)
+		{
+			var char = str.charCodeAt(i);
+			if(char>=97 && char<=122)
+
+			{
+				result += (char-96);
+				result += " ";
+			}
+		}
+		return result;
+	}
+	document.write("<h2>"+ALPHA_POS(string)+"</h2>");
+</script>
+</body>
+</html>
